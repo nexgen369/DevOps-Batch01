@@ -1,0 +1,433 @@
+Topics Covering:
+---------------
+1.Operating system (windows/linux)-intermediate level 
+
+2.Cloud Computing (Aws-Amazon Web services)
+	Foundation level-Terminology cloud
+	-----------------------------------
+	What is cloud Computing
+	Basic Concepts of Cloud Computing
+	*Service Models:
+		(Iaas-Infrastructure as a service), 
+		(PaaS-Platform as a service), 
+		(Saas-Software as service),
+		
+	*Deployment models:
+		(Public Cloud)
+		(Private cloud)
+		(Hybdrid Cloud)
+		
+	-Cost Optimization (cost cutting)
+	-Uses and benefits of cloud computing
+	-Why do we use cloud computing
+	
+	Associate Level: Solutions Architect Associate
+	----------------------------------------------
+	use case: e-commerce application (Amazon, Flipkart)
+	
+	-Design the architecture
+		To Run the application: servers, database, security, monitoring, containers, storage, notifications services etc
+	
+	
+	-Frontend (main door of our house)login/sign up
+		
+		in between frontend to backend there is API-Application programming interface(API-gatway)
+	
+	-Backend services(product services, payment service, add to cart, logout)
+	-Database (store users details)
+	
+	Three tier architecture:
+	------------------------
+	1.Frontend- login/signup (web server-presentation tier)
+	2.App server-deals with business logic- orders, payments, product services etc
+	3.Database- stores users data
+
+TOPIC:3 DevOps
+---------------
+
+Top 6 DevOps Tools (Explained Clearly)
+--------------------------------------
+1. Git – Version Control System
+
+* Git is a distributed **Version Control System (VCS)** used to track code changes.
+* Helps developers collaborate, manage branches, and maintain code versions efficiently.
+
+2. Terraform – Infrastructure as Code (IaC)
+
+* Terraform is an **IaC tool** used to automate and provision cloud infrastructure.
+* Enables reproducible infrastructure using code (declarative configuration files).
+
+3. Ansible – Configuration Management Tool
+
+* Ansible automates **configuration management, application deployment, and orchestration.
+* Agentless tool (uses SSH), making it lightweight and easy to manage multiple servers.
+
+4. Docker – Containerization Platform
+
+* Docker packages applications and dependencies into **containers.
+* Ensures consistent environment across development, testing, and production.
+
+5. Kubernetes – Container Orchestration Platform
+
+* Kubernetes manages and scales Docker containers in **production environments.
+* Handles load balancing, self-healing, scaling, and automated deployments.
+
+6. Jenkins – CI/CD Automation Tool
+
+* Jenkins automates **Continuous Integration (CI)** and **Continuous Delivery/Deployment (CD)**.
+* Integrates with Git, Docker, Kubernetes, and other tools for end-to-end automation.
+
+What is DevOps? (Clear Explanation):
+====================================
+DevOps is a **culture, process, and set of practices** that bring **Development (Dev)** and **Operations (Ops)** teams together.
+The goal is to deliver software **faster, more frequently, and with higher quality**.
+
+To understand DevOps, let’s compare it with real-life examples.
+
+1. School Management System Example
+
+50 Years Back – Old Process (Waterfall-like)
+============================================
+Stakeholders:
+
+* Students
+* Teachers
+* Parents
+
+Process: Only One Final Exam
+
+* Students → Not serious from Day 1
+* Teachers → Not serious from Day 1
+* Parents → Worried only at the end
+
+Result:
+
+* Only **20–30%** pass
+* Very low success rate
+* Everyone reacts late → Poor results
+
+Conclusion:
+We needed to change the process.
+
+30 Years Back – Improved Process (Agile-like)
+=============================================
+Unit tests, Quarterly, Half-yearly, Pre-final
+
+Unit Test-1 (After 1.5 months):
+
+* Students → Serious at least before 1 week
+* Teachers → Serious from Day 1
+* Parents → Start monitoring from Day 1
+
+Pass percentage: 30%
+
+Unit Test-2 → 31%
+
+Unit Test-3, Quarterly, Half-yearly, Pre-final
+
+Final result → 80%
+Expectation → 100%
+
+Conclusion:
+Further improvement needed.
+
+
+10 Years Back – Best Practice (Continuous Feedback)
+====================================================
+Daily slip tests + Unit tests + Term exams
+
+* Students stay alert daily
+* Teachers monitor continuously
+* Parents track performance regularly
+
+Results → 99%
+
+Year: 365 Days , 200 Exams per year
+
+This continuous evaluation gives **continuous improvement**, just like DevOps.
+
+2. Software Development Models
+SDLC – Software Development Life Cycle
+======================================
+1. Requirements
+2. Planning
+3. Design
+4. Development
+5. Testing
+6. Deployment
+7. Maintenance
+
+Waterfall Model (Old Approach – 50 Years Back)
+
+Project duration: 2 years
+
+Stakeholders:
+
+* Students → Developers
+* Teachers → Testers
+* Parents → Clients
+
+Problems:
+
+* Developers → Not serious from Day 1
+* Testers → Not serious from Day 1
+* Clients → Worried from Day 1
+
+After 1 year → Team becomes serious
+Development → 6 months
+Testing → 100 defects (10 invalid)
+
+Delivered product:
+Expected = Innova, Delivered = Maruti 800
+
+Conclusion: Slow, no customer feedback, late delivery.
+
+Agile Methodology (30 Years Back)
+=================================
+Work is divided into **Sprints (installment-based delivery)**.
+
+Example: E-commerce Modules
+
+1.User Management
+
+   * Signup, Login, Forgot Password, Change Password
+   * 1 month development + 1 month testing
+
+2. Product Management
+
+3. Cart
+
+4. Shipping
+
+5. Payment & Orders
+
+User Management:
+
+* 30 days dev + 30 days test
+* 50 defects → 15 invalid
+* Client testing → 10 bugs
+
+Next Sprint: Fix previous bugs + Build next module
+Expected = BMW, Delivered = Innova
+
+Better than Waterfall but still not perfect.
+
+DevOps with Agile (Modern Approach)
+===================================
+Day-1 Process
+
+* Developer writes code
+* The same day → Build (compile & package)
+* Same day → Test
+* Defects found early
+* Only 1–2 valid defects → Easy to fix
+
+Teams:
+
+Dev team: Java/Python/Node.js
+Ops team: Testing, Build & Release, Cloud
+
+DevOps Goal:
+
+Create a CI/CD pipeline where code is →
+Developed → Tested → Built → Deployed
+on the same day using automation tools.
+
+3. Computers and Servers
+
+What is a Computer?
+===================
+A machine that **computes** or performs tasks.
+
+Can we call these computers?
+
+* Mobile? → Yes
+* TV? → Yes
+* Server? → Yes
+
+A server is a powerful computer used to serve data to clients.
+
+What is a Server?
+
+A server serves data or services to users (clients).
+
+Examples:
+
+* Web server → Apache, Nginx
+* Database server → MySQL, PostgreSQL
+* File server → Samba, NFS
+* Mail server → Exchange, Postfix
+* Application server → Tomcat, WebLogic
+* DNS server → BIND, Microsoft DNS
+
+Server Hardware Components
+
+* CPU → Brain
+* RAM → Temporary memory
+* Motherboard → Connects components
+* NIC → Network card
+* Storage → HDD/SSD
+* Cooling system
+
+Server Software (OS)
+
+* Linux (Ubuntu, RHEL, CentOS…)
+* Windows Server
+* Mac OS
+
+Provides:
+
+* File system
+* Process/memory management
+* Network communication
+* Security/user management
+
+4. Operating System (OS)
+
+OS = Interface between user and hardware
+
+Types:
+
+* Windows 10/11
+* Linux Distributions (Ubuntu, Debian, RHEL, CentOS, Fedora, Kali)
+* Android OS
+
+Windows vs Linux
+
+| Feature       | Windows           | Linux                |
+| ------------- | ----------------- | -------------------- |
+| Developer     | Microsoft         | Open Source          |
+| Source code   | Closed            | Open                 |
+| Cost          | Paid              | Free                 |
+| UI            | GUI-based         | CLI-focused          |
+| Customization | Limited           | Highly customizable  |
+| Performance   | Slower            | Lightweight          |
+| Best for      | Beginners, Gaming | Servers, Programming |
+
+Advantages:
+
+Windows: Easy, supports all hardware, great for gaming
+Linux: Secure, stable, free, great for servers
+
+
+5. Creating a Linux Server on AWS EC2
+EC2 – Elastic Compute Cloud
+
+* Used to launch virtual servers
+* Supports Linux/Windows
+* Scalable, available
+* Pay-as-you-go
+
+Components:
+
+* Hardware (CPU, RAM, Disk)
+* Software (Operating System)
+
+---
+
+Steps to Launch EC2 Instance
+
+1. AWS Login
+2. Give instance a Name
+3. Choose AMI (OS image)
+4. Select Instance Type (Hardware)
+5. Create/Select Key Pair
+6. Configure Network (VPC, Security Group)
+7. Configure Storage (EBS)
+8. Launch Instance
+
+---
+
+## **Important Ports**
+
+* SSH → 22
+* HTTP → 80
+* HTTPS → 443
+
+---
+
+## **EBS – Elastic Block Store**
+
+* SSD/HDD storage
+* Up to 16 TB per volume
+* Up to 128 volumes per instance
+
+---
+
+## **Connect to EC2**
+
+* `.pem` → MobaXterm
+* `.ppk` → PuTTY
+
+---
+
+# **6. Introduction to Linux**
+
+Linux = Multi-user, multi-tasking OS
+Architecture:
+
+1. **Hardware**
+2. **Kernel**
+3. **Shell**
+4. **Application Layer**
+
+### User Symbols:
+
+* `$` → Normal user
+* `#` → Root user
+* `sudo su` → Become root
+* `Ctrl + D` → Exit root
+
+---
+
+# **7. Linux Commands**
+
+## **File Commands**
+
+* `ls` → List
+* `ls -al` → Hidden files
+* `touch file` → Create file
+* `cat file` → View file
+* `rm file` → Delete file
+
+## **Directory Commands**
+
+* `mkdir folder`
+* `cd folder`
+* `pwd` → Current path
+* `rmdir folder` → Remove empty folder
+* `rm -r folder` → Delete folder with files
+
+---
+
+# **8. Linux File Types**
+
+| Type             | Symbol |
+| ---------------- | ------ |
+| Regular          | -      |
+| Directory        | d      |
+| Character Device | c      |
+| Block Device     | b      |
+| Socket           | s      |
+| Pipe (FIFO)      | p      |
+| Symbolic Link    | l      |
+
+
+9. Text Editors
+================
+nano
+
+* Save = Ctrl+X → Y → Enter
+* Exit = Ctrl+X → N
+
+vi / vim
+
+* Insert mode = `i`
+* Save = `Esc :wq`
+* Quit without saving = `Esc :q!`
+
+vim vs vi
+
+* vim = Improved (syntax highlight, multi-undo, windows)
+* vi = Basic
+
