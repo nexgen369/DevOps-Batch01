@@ -1,1 +1,58 @@
+Topic5: File Permissions:
+-------------------------
+Linux file permissions control who can read, write, or execute a file or directory
+These permission are crucial for system security and user management
+
+Types of permissions & Users
+----------------------------
+Three Types of permissions:
+
+	.Read(r): View contents of a file/directory
+	.Write(w): Modify file or add/remove in directory
+	.Execute(x): Run file (script/program) or access directory
+
+Three Types of Users:
+
+	.Owner(user): who created the file/owner of the file
+	.Group: User in files group
+	.Others: All other users not a owner or not in group
+
+Permission Format:
+------------------	
+use ls -l to see permission (E.g., -rwxrw-r--)
+
+Breakdown: (-rwxrw-r--)
+
+Symbol			Meaning
+-				Regular file (d for directory)
+rwx				Owner: read, write, Execute
+rw-				Group: read, write, No permission
+r--				Others: read, No permission, No permission
+
+Numeri(Octal) Notation:
+-----------------------
+Each permission had a value:
+
+	. r=4
+	. w=2
+	. x=1    Total value is '7'
+
+To set permissions: "chmod 755 filename"
+
+	Owner: rwx(7=4+2+1)
+	Group: r-x(5=4+0+1)
+	Others:r-x(5=4+0+1)
+	
+	Full permission: 777
+	Zero permission: 000
+
+Symbolic	Numeric	Permissions
+,---	0	None
+,--x	1	Execute
+,-w-	2	Write
+,-wx	3	Write+Execute
+r--	4	Read
+r-x	5	read+Execute
+rw-	6	read+write
+rwx	7	read+write+Execute
 
