@@ -1,0 +1,38 @@
+Changing Permission and Ownership:
+---------------------------------
+View permission: "ls -ls"
+Change permission: "chmod [options] [permission] file"
+Change Owner: chown user file
+
+
+Topic:6
+$: This is normal user with limited permissions
+#: Super user/root user with all permissions
+
+To convert normal user to super/root user: "sudo su"
+
+Topic:7 copy, move or rename files and directories
+---------------------------------------------------
+1.copy commands(cp)
+	.cp raju shiva
+	
+2.copy file to directory
+	.cp shiva /path/to/dir
+	.cp shiva /home/ec2-user/nexgen
+	
+3.copy Multiple files
+	.cp dinesh naresh raju /home/ec2-user/nexgen
+	
+4.Move a file
+	.mv shiva /home/ec2-user/nexgen
+
+5.Move a directory
+	.mv nexgen /home/ec2-user/yash/priya
+
+6.Rename commands(mv)
+Linux does not have a separate rename command; mv is used for renaming
+
+rename a file:
+	.mv oldname newname
+	
+remove a directory(old)
