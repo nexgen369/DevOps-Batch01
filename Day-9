@@ -1,0 +1,66 @@
+Topic:8 Reporting File system disk space usage
+----------------------------------------------
+Learn how to check disk and memory usage easily on linux
+
+Disk space usage commands:
+	.df -h : Report file system disk space usage (human readable)
+	.du -h : Estimate file space usage(human readable)
+	
+Memory Usage Commands:
+	.free : Display amount of free and used memory in the system
+	.free -h : Human readable memory output
+	.free -k : Display memory in kilobytes(KB)
+	.free -m : Display memory usage in megabytes(MB)
+	.free -g : Display memory usage in gigabytes(GB)
+
+Topic:9 Package management:
+---------------------------
+.is used to install, update, configure and remove software.
+.It ensures that software package and dependencies are handled properly and maintain(secure and manage their system efficently)	
+	 
+Example:
+	
+	.Web server -> serves websites (e.g., Apache, Nginx)
+	.Database server -> stores and manages data (e.g., MySQL, Postgres, microsoft etc)
+	.File Server -> stores and shares files between servers
+	.Mail server -> handles emails (e.g., Microsoft Exchange)
+	.Application Server -> runs business logics
+	
+EC2 server:
+-----------	
+	when you choose amazon Linux/debian/ubuntu/redhat/centos:
+	
+	Task:					Debian/Ubuntu:					Redhat/Amazon linux/CentOS:
+	--------------------------------------------------------------------------------
+	Update					sudo apt update					sudo yum update
+	upgrade all packages	sudo apt upgrade				sudo yum upgrade
+	Install package			sudo apt install packagename	sudo yum install packagename
+	remove package			sudo apt remove packagename		sudo yum remove packagename
+	List installed packages	apt list --installed			yum list installed
+	
+Key Features & Functions:
+
+	.Install: add new software
+	.Upgrade: update installed packages
+	.Remove: Uninstall software
+
+
+
+TOPIC:10 Service Management:
+----------------------------
+you can start, stop, restart and monitor service
+
+Key service managment commands:
+-------------------------------
+For Example:
+	
+Action:					Command Example:
+----------------------------------------
+start service			sudo systemctl start service
+stop service			sudo systemctl stop service
+restart service			sudo systemctl restart service
+
+Examples:
+	.Start Apache: sudo systemctl start nginx/apache/httpd
+	.stop Apache: sudo systemctl stop httpd
+	.restart Apache: sudo systemctl restart httpd
