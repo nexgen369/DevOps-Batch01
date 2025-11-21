@@ -1,0 +1,40 @@
+Topic:11 user management in Linux:
+----------------------------------
+.Manage users and groups using command-line tools
+.Create, modify, view and delete users and groups
+.groups nothing but collection of users
+
+Creating users:
+	.useradd/adduser: Adding new user (ex: useraddd shiva)
+	 shiva:!!:20413:0:99999:7:::
+	a)shiva: This is the username you created
+	b)!!: password is locked or not set 
+	C)20413: date when the password was last changed
+	d)0:Minimum days between password changes
+	e)99999: Maximum days before password expires
+	f)7: Warining period before password ecpiry
+	g)::: = inactivity or account expiry
+	
+Setting and managing passwords:
+	.passwd: set or change user password (Ex: psswd shiva/kumar)
+	
+logging to account using username and password:
+	.su username
+	
+To view all users:
+	.cat /etc/shadow
+	.cat /etc/passwd
+	
+Deleting Users:
+	.userdel: delete user (Ex: userdel shiva/kumar)
+	.deluser: Delete user and thier files (Ex: deluser shiva/kumar)
+	
+Viewing user information:
+	.id: show users UID and group IDs (Ex: id shiva)
+
+Group management:
+-----------------
+	.groupadd: Adding new group (ex: groupadd groupname)
+	.cat /etc/group: checking group exit or not
+	.usermod: Add user to a group (ex: usermod -aG groupname username)
+	.groupdel: Delete group (ex: groupdel groupname)
