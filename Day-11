@@ -1,0 +1,84 @@
+Scripting:
+----------
+1.Python
+2.JAVA
+3.Linux(bash scripting) 
+
+Shell Scripting(bash scripting):
+--------------------------------
+	.Bash shell scripting refers to writing a series of commands.
+	.BASH SHELL (Bourne Again Shell), to perform complex operations or to automate daily task.
+	.Bash is default shell for most linux operating systems
+	
+	
+	Key aspects of bash scripting:
+	------------------------------
+	1.scripting langauge: Bash scripting uses the bash shell as an interpreter(#!/bin/bash) to execute script file, can be used for wide range purpose, from simple file manupulation to more complex tasks like system admin or automate or repetitive task.
+	
+	Syntax:
+	-------
+	.Bash scripting are written using shell commands control structure(like loops and condtions), variables, functions and comments.
+	.When you create shell file the extension of the file is (.sh)
+	Automation:
+	-----------
+	can automate task such as:
+		-file backups
+		-log file analysis
+		-software installations (web servers etc)
+		-system monitoring and more
+		-Creating cloud resources (AWS)
+		
+	Note: saves more time and reduce human error	
+	
+	
+	"#!/bin/bash" is called a shebang
+	
+	What is shebang ?
+	Ans: A shebang tells Linux which interpreter should run the script
+	
+	"#!/bin/bash" means:
+	.Use /bin/bash to execute this file
+	.simple OS knows its bash script
+	.without this line, your script may not run properly
+	
+	To execute the shell file:
+	--------------------------
+	1.bash filename.sh
+	2.sh filename.sh
+	3../filename.sh (but allow the +x permission)
+	
+	task:
+	i want create a directory,
+	want to switch a directory
+	inside the directory want to create file with content
+	
+1.	#!/bin/bash
+	
+	mkdir nexgen
+	cd nexgen
+	echo "Hello Guys welcome to Nexgen" > sample
+	
+2.  #!/bin/bash
+	mkdir nexgen
+	cd nexgen
+	cat > bhavani <<EOL
+	Hello guys, welcome to nexgen
+	EOL	
+	
+	Note:EOL means end of line	
+
+3.  #!/bin/bash
+	mkdir nexgen
+	cd nexgen
+	cat <<EOF > dinesh
+	Hello Guys
+
+	Note: EOF means that you to write multiple lines into a file
+
+4.Check Disk, memory, CPU 
+	#!/bin/bash
+	echo "----- Disk Usage -----"
+	df -h
+	
+	echo "----- Memory Usage -----"
+	free -m
