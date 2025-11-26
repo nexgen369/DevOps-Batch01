@@ -1,0 +1,49 @@
+Topic1: Variables
+-----------------
+
+syntax:
+	variable_name="value"
+	
+	Rules:
+	.No space around=
+	.Quotes required only when values contain spaces
+	.Variable reference uses $var or "${var}"
+	
+	Example:
+	#!/bin/bash
+	name="linux"
+	echo "Welcome to $name learning"
+	
+Environment Varibles:
+---------------------
+Environment variables are global and inherited processes.
+
+common variables
+----------------
+variable			Meaning
+---------------------------
+$USER				Logged-in user
+$HOME				Home directory path
+$PATH				Path where executables are searched
+$PWD				Current working directory	
+
+
+#!/bin/bash
+name=shiva
+echo "my name is $name"
+
+
+#Example2: Number variable
+count=20
+echo "Count is $count"
+
+
+# Example3: Print system variables
+echo "User: $USER"
+echo "Home directory: $HOME"
+echo "Current directory: $PWD"
+echo "Shell: $SHELL"
+
+#Example4: Store a command output
+date_now=$(date)
+echo "Current date is: $date_now"
